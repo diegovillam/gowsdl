@@ -47,7 +47,7 @@ func init() {
 	}
 }
 
-var timeout = time.Duration(30 * time.Second)
+var timeout = time.Duration(60 * time.Second)
 
 func dialTimeout(network, addr string) (net.Conn, error) {
 	return net.DialTimeout(network, addr, timeout)

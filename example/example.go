@@ -22,7 +22,7 @@ func ExampleBasicUsage() {
 func ExampleWithOptions() {
 	client := soap.NewClient(
 		"http://svc.asmx",
-		soap.WithTimeout(time.Second*5),
+		soap.WithTimeout(time.Second*30),
 		soap.WithBasicAuth("usr", "psw"),
 		soap.WithTLS(&tls.Config{InsecureSkipVerify: true}),
 	)
