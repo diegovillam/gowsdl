@@ -172,9 +172,9 @@ type options struct {
 }
 
 var defaultOptions = options{
-	timeout:          time.Duration(90 * time.Second),
-	contimeout:       time.Duration(90 * time.Second),
-	tlshshaketimeout: time.Duration(90 * time.Second),
+	timeout:          time.Duration(300 * time.Second),
+	contimeout:       time.Duration(300 * time.Second),
+	tlshshaketimeout: time.Duration(300 * time.Second),
 }
 
 // A Option sets options such as credentials, tls, etc.
